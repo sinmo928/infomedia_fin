@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/highchart.js"></script>
+    <script src="js/star.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div class="topbar"></div> -->
+    <canvas id="canvas"></canvas>
+    <div class="info_box">
+      총 대수: 4,852대<br />최고 고도: Spektr-R (330,000km)<br />최다 보유국:
+      미국 (2,926대)<br />최장 활동위성: Amsat-Oscar 7 (1974년 발사)
+    </div>
+
+    <figure class="highcharts-figure">
+      <div id="container"></div>
+      <p class="highcharts-description">
+        *인공위성의 거리와 목적, 발사일자를 기준으로 시각화한 데이터로
+        중점으로부터 멀수록 고궤도에 떠있는 위성이며 우측으로 갈수록 최근에
+        발사된 위성이다.
+      </p>
+    </figure>
+
+    <div class="title_box">
+      <h1>SATELLITE</h1>
+      <h3>in <span style="color: #82b1ed">SPACE</span></h3>
+    </div>
+
+    <div class="text_box">
+      <h1>인공위성</h1>
+      <h2>
+        인공위성(Artificial Satellite)은 달처럼 지구를 타원 궤도에 따라 돌 수
+        있도록 만들어진 물체이다. 그 종류는 우주 관측, 지구 관측,
+        상업용(GPS/방송), 군사용 등이 있으며, 목적에 따라 지구와의 거리 및
+        궤도를 유지한 채 끊임없이 움직이며 역할을 수행한다. 현재 수많은
+        인공위성들이 각각 다른 목적을 띠고 자국의 이익을 위해 지구 주변을
+        정찰하거나 우주를 향한 꿈의 씨앗을 뿌리고 있다. 이 가운데 폐기되거나
+        대기권에 진입하여 타서 없어진 것을 제외하면 지구 궤도에 떠다니고 있는
+        인공위성은 한 치의 틈도 없이 지구를 둘러싸며 돌고 있다. 이에 쏘아올려진
+        인공위성 중 등록된 위성을 시각화 하여 정리하고 용도에 따라 한눈에
+        보이도록 했다.
+      </h2>
+    </div>
+
+    <div class="text_box">
+      <h1>얼마나 많은 인공위성이 우주에 떠있나</h1>
+      <h2>
+        현재까지 UCS에는 4,852대의 위성이 등록되어 있다. 그러나 이 수치에는
+        등록되지 않은 위성과 비공개로 발사된 위성 등이 누락되어있다. 따라서 현재
+        지구 위를 떠다니는 인공위성은 약 5,000대 이상일 것으로 추정된다. 또한
+        인공위성의 증가추세 또한 눈여겨 볼 필요가 있다. 2020년, 2021년 두 해
+        동안 발사된 인공위성의 수는 2,847대로 운용중인 인공위성의 절반을 넘게
+        차지하고 있다. 스타링크 등 통신위성의 증가세가 가파르며 현재도
+        지속적으로 발사되고 있기에 총량이 나날이 증가하고 있다.
+      </h2>
+    </div>
+
+    <figure class="highcharts-figure2">
+      <div id="container2"></div>
+      <p class="highcharts-description2">
+        *연도별 발사 대수로 누적 대수가 아님
+      </p>
+    </figure>
+
+    <div class="text_box">
+      <h1>인공위성의 발사 목적</h1>
+      <h2>
+        인공위성의 발사목적은 크게 통신 위성,지구관측 위성, 기술 위성,
+        네비게이션(GPS) 위성, 우주과학 위성으로 나눌 수 있다. 현재 운용중인
+        5,000여대의 인공위성 중 65%가 넘는 3,100여대의 위성이 통신위성으로
+        운용중이며, 20% 가량인 1,000여대의 위성이 지구관측 용도로 사용되고 있다.
+        기술·GPS·우주과학 위성이 각 10%,5%,5% 가량을 차지한다. 스타링크 등의
+        통신위성 발사 계획이 다수 수립되있어 통신위성의 비중은 더욱 올라갈
+        예정이다.
+      </h2>
+    </div>
+
+    <figure class="highcharts-figure3">
+      <div id="container3"></div>
+      <p class="highcharts-description3">
+        *어두운 색일수록 비중이 큼을 의미한다.
+      </p>
+    </figure>
+
+    <div class="text_box">
+      <h1>UCS Satellite Database</h1>
+      <h2>
+        UCS(Union of Concerned Scientists, 참여 과학자 모임)는 미국에서 환경문제
+        해결을 위해 비영리로 운영되는 자발적인 과학자들의 모임이다. UCS에서는
+        2005년 이래로 꾸준히 운용위성에 대한 오픈소스 정보를 수집, 정리해 연구
+        및 분석 도구로 사용하도록 제공하고있다. 단순히 인공위성과 궤도에 대한
+        데이터 뿐만 아니라 소유 및 구축 정보등을 포함한 28가지 데이터를 포함하고
+        있다. 해당 데이터 시각화 또한 UCS Satelite Database를 기반으로
+        제작되었다.
+      </h2>
+    </div>
+
+    <div class="text_box">
+      <h1>Source</h1>
+      <h3>
+        https://www.ucsusa.org/resources/satellite-database(UCS Satellite
+        Database) <br />
+        https://www.highcharts.com/(Highcharts)<br />
+        SEONG IN MO<br />
+        2022
+      </h3>
+    </div>
+  </body>
+</html>
