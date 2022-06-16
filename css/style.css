@@ -17,15 +17,15 @@ body {
   font-family: "Noto Sans KR";
   position: absolute;
   font-weight: 400;
-  color: white;
+  color: lightgray;
   text-align: left;
   width: 300px;
   height: 300px;
-  left: 20px;
-  top: 150px;
+  right: 10px;
+  top: 770px;
   z-index: 1;
   font-size: 13px;
-  line-height: 28px;
+  line-height: 13px;
   letter-spacing: 1px;
 }
 
@@ -108,13 +108,23 @@ body {
 }
 
 .text_box h1 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 30px;
   text-align: left;
   color: #82b1ed;
 }
-
 .text_box h2 {
+  font-weight: 00;
+  padding-top: 5px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+  text-indent: 0px;
+  word-break: keep-all;
+  letter-spacing: 0px;
+}
+
+.text_box h3 {
   font-weight: 100;
   padding-top: 20px;
   text-align: left;

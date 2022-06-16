@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Highcharts.chart("container", {
       chart: {
         polar: true,
-        height: 780,
+        height: 785,
         backgroundColor: "transparent",
       },
 
@@ -127,19 +127,19 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       title: {
-        text: "Satellites Orbiting Earth",
+        text: "SATELLITE ORBITING EARTH",
         style: {
           color: "#82B1ED",
-          fontFamily: "Libre Franklin",
+          fontFamily: "Noto Sans KR",
           fontSize: "30px",
-          fontWeight: 600,
+          fontWeight: 700,
         },
       },
 
       subtitle: {
         text: "Updated Jan 1, 2022",
         style: {
-          color: "#ffffff",
+          color: "lightgray",
           fontFamily: "Libre Franklin",
           fontWeight: 600,
         },
