@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
         style: {
           color: "#ffffff",
           fontFamily: "Libre Franklin",
+          fontWeight: 600,
         },
       },
 
@@ -288,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 수량차트
     Highcharts.chart("container2", {
       chart: {
-        backgroundColor: "#202326",
+        backgroundColor: "#101316",
         height: 400,
         width: 700,
       },
@@ -383,7 +384,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //넓이차트
     Highcharts.chart("container3", {
       chart: {
-        backgroundColor: "#202326",
+        backgroundColor: "#101316",
         height: 400,
         width: 700,
       },
@@ -411,7 +412,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
           type: "treemap",
           borderWidth: 2,
-          borderColor: "#202326",
+          borderColor: "#101316",
           layoutAlgorithm: "squarified",
           data: purpose_table,
         },

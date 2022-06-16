@@ -98,7 +98,7 @@ $(document).ready(function () {
   function animation() {
     ctx.globalCompositeOperation = "source-over";
     ctx.globalAlpha = 0.8;
-    ctx.fillStyle = "hsla(210, 8.6%, 13.7%, 1)";
+    ctx.fillStyle = "#101316";
     ctx.fillRect(0, 0, w, h);
 
     ctx.globalCompositeOperation = "lighter";
